@@ -34,7 +34,6 @@ public class KarkasBuilder implements Builder {
         walls.add(new WoodWall());
         walls.add(new WoodWall());
 
-
     }
 
     @Override
@@ -47,5 +46,9 @@ public class KarkasBuilder implements Builder {
     @Override
     public House getResult() {
         return new House(roof, background, walls);
+    }
+
+    public List<Wall> getResultWalls() {
+        return walls;
     }
 }
